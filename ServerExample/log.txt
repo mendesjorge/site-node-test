@@ -1,0 +1,5 @@
+Luís Mendes Jorge "Incomplete" (9/10/2013):
+	Erros no index do socket.io e buttonClick
+
+Luís Mendes Jorge "Socket.io funcional"(10/10/2013):
+	falta alterar os textos e tornar mais friendly

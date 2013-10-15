@@ -1,0 +1,15 @@
+#news ul{
+    width: 70%;
+    height: 16px;
+    bottom: 2px;
+    overflow: hidden;
+    position:absolute;
+    padding: 4px;
+    border: solid 1px #000;
+    left:120px;
+}
+
+#news h2{
+	position: absolute;
+	bottom: 0px;
+}

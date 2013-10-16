@@ -16,8 +16,9 @@ google.load("feeds", "1");
 });*/
 
 function lineFunc(data,i){
-	return i>0 ?"<li class='noshow'><a href='"+data.attr("link")+"'>" + data.attr("title")+"</a></li>"
-		:"<li><a href='"+data.attr("link")+"'>" + data.attr("title")+"</a></li>";
+	var title = data.attr("title").replace(/�/g,'ç');
+	return i>0 ?"<li class='noshow'><a target= '_parent' href='"+data.attr("link")+"'>" + title+"</a></li>"
+		:"<li><a target= '_parent' href='"+data.attr("link")+"'>" + title+"</a></li>";
 }
 
 

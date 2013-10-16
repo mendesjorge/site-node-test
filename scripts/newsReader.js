@@ -23,31 +23,21 @@ function lineFunc(data,i){
 
 var newsInitCallBack = function(){
 	var feed = new google.feeds.Feed(news.attr("link"));
-
+	var ulElem = news.find("ul");
 	feed.load(function (data) {
 	    // Parse data depending on the specified response format, default is JSON.
 	    $(data.feed.entries).each(function(i){
-	    	news.find("ul").append(lineFunc($(this),i));
+	    	ulElem.append(lineFunc($(this),i));
 	    });
 
 	     console.log(data);
+	     activeSlide(ulElem,2000);
 	});
 }
 
-
-function changeScrolling(el1, el2){
-	el1.slideUp('slow');
-	el2.slideDown('slow');
-}
-
-$(document).ready(function(){
-	news = $($("div#news")[0]);
-	newsInitCallBack();
-
-	var ulElem = news.find("ul");
+function activeSlide(ulElem, speed){
     var scrolling,
-    i = 0,
-    speed = 2000;
+    i = 0;
     
     ulElem.mouseleave(function() {
     	var els = $(ulElem[0]).children();
@@ -68,6 +58,10 @@ $(document).ready(function(){
     });
     
     ulElem.mouseleave();
+};
 
+$(document).ready(function(){
+	news = $($("div#news")[0]);
+	newsInitCallBack();
 });
 

@@ -32,7 +32,7 @@ var newsInitCallBack = function(){
 	    });
 
 	     console.log(data);
-	     activeSlide(ulElem,2000);
+	     activeSlide(ulElem,3500);
 	});
 }
 

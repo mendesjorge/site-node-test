@@ -5,18 +5,8 @@
 		<link rel="stylesheet" href="style/main.css"/>
 	</head>
 	<body>
-		<div id="headbar">
-			<ul>
-				<li>
-					<a href="nextPage.html">nextPage</a>
-				</li>
-				<li>
-					<a href="prevPage.html">Previous Page</a>
-				</li>
-				<li>
-					<a href="chat.html">Chat</a>
-				</li>
-			</ul>
+		<div id='top'>
+			<% include headMenu.html %>
 		</div>
 			<div id="slider">
 			<div id="nav">
@@ -29,7 +19,8 @@
 				<img class="sp" src="images/maquinas.jpg"/>
 				</div>
 			</div>
-		
-		<iframe style="bottom:0px; position:absolute; width:99%;" name="bottom-frame" scrolling="no" seamless src="newsBar.html">
+		<div id='bottom'>
+		<% include newsBar.html %>
+		</div>
 	</body>    
 </html>

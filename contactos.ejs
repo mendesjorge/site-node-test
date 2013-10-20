@@ -1,0 +1,51 @@
+
+<html>
+	<head>
+	<script type="text/javascript" src='scripts/lib/jquery-1.9.1.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="style/contactos.css"/>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJod-cSw2YkND9nuMhSmtng2VxWJMav-c&sensor=true" type="text/javascript"></script>
+	<script src='scripts/miniMap.js'></script>
+	</head>
+	
+	<body>
+		<div id='top'>
+			<% include headMenu.html %>
+		</div>
+		
+		<h2>Contactos/Contacts</h2>
+		<div id='hor-show'>
+			
+			<table id='contactTable'>
+			
+				<tbody>
+				<tr>
+					<th><strong>Geral/General:</strong></th>
+					<td>+244 939 149 560</td>
+				</tr>
+				<tr>
+					<th><strong>Mr. Mário Prieto:</strong></th>
+					<td>+244 939 149 559</td>
+				</tr>
+				<tr>
+					<th><strong>Assistência Ténica/ Tecnical Service:</strong></th>
+					<td>+244 939 170 844</td>
+				</tr>
+				<tr>
+					<th><strong>Email:</strong></th>				
+					<td>geral@maqman.net<br/>assistencia.tecnica@maqman.net</td>
+				</tr>
+				 
+				
+				</tr>
+				</tbody>
+			</table>
+
+			<div id='miniMap'></div>
+		</div>
+
+<div id='bottom'>
+			<% include newsBar.html %>
+		</div>
+
+</body>
+</html>

@@ -4,7 +4,7 @@
   "scripts": {
     "start": "node server.js"
   },
-  "version": "0.0.1",
+  "version": "0.0.1-5",
   "dependencies": {
     "ejs": "x.x.x"
   },

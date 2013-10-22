@@ -6,7 +6,7 @@
     width: 98.5%;
     margin-right: auto;
     margin-left: auto;
-    position: absolute;
+    position: fixed;
     background-color: red;
     overflow: hidden;
     display: -webkit-inline-flex;

@@ -1,5 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @charset 'UTF-8';
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
 
 #partners{
   text-align: center;
@@ -9,111 +10,149 @@
 vertical-align: middle;
 
 }
-
+img#comp{
+  position: absolute;
+  background-color: white;
+}
 
 /* Base Styles */
-#cssmenu ul,
-#cssmenu li,
-#cssmenu a {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  line-height: 1;
-  font-family: 'Lato', sans-serif;
-}
-#cssmenu {
-  border: 1px solid #990a00;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  width: auto;
+
+#cssmenu ul:first-child{
+  margin-left: 230px;
 }
 #cssmenu ul {
-  zoom: 1;
-  background: #ff4133;
-  background: -moz-linear-gradient(top, #ff4133 0%, #ff1100 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff4133), color-stop(100%, #ff1100));
-  background: -webkit-linear-gradient(top, #ff4133 0%, #ff1100 100%);
-  background: -o-linear-gradient(top, #ff4133 0%, #ff1100 100%);
-  background: -ms-linear-gradient(top, #ff4133 0%, #ff1100 100%);
-  background: linear-gradient(top, #ff4133 0%, #ff1100 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
-  padding: 5px 10px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-}
-#cssmenu ul:before {
-  content: '';
-  display: block;
-}
-#cssmenu ul:after {
-  content: '';
-  display: table;
-  clear: both;
+  margin: 0;
+  padding: 0;
 }
 #cssmenu li {
-  float: left;
-  margin: 0 5px 0 0;
-  border: 1px solid transparent;
+  margin: 0;
+  padding: 0;
 }
-#cssmenu li a {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  padding: 8px 15px 9px 15px;
-  display: block;
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+}
+#cssmenu ul {
+  list-style: none;
+}
+#cssmenu a {
   text-decoration: none;
-  color: #ffffff;
-  border: 1px solid transparent;
-  font-size: 16px;
 }
-#cssmenu li.active {
+#cssmenu {
+  height: 70px;
+  background-color: red;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+  width: auto;
+}
+#cssmenu > ul > li {
+  float: left;
+  margin-left: 15px;
+  position: relative;
+}
+#cssmenu > ul > li > a {
+  color: #000000;
+  font-family: Verdana, 'Lucida Grande';
+  font-weight: bolder;
+  font-size: 15px;
+  line-height: 70px;
+  padding: 15px 20px;
+  -webkit-transition: color .15s;
+  -moz-transition: color .15s;
+  -o-transition: color .15s;
+  transition: color .15s;
+}
+#cssmenu > ul > li > a:hover {
+  color: #fae500;
+}
+
+#cssmenu > ul > li > a:active {
+  color: white;
+ text-shadow: 0 0 120px white;
+}
+#cssmenu > ul > li > ul {
+  opacity: 0;
+  visibility: hidden;
+  padding: 16px 0 20px 0;
+  background-color: #fafafa;
+  text-align: left;
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  margin-left: -90px;
+  width: 180px;
+  -webkit-transition: all .3s .1s;
+  -moz-transition: all .3s .1s;
+  -o-transition: all .3s .1s;
+  transition: all .3s .1s;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border-radius: 5px;
-  border: 1px solid #ff4133;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
 }
-#cssmenu li.active a {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+#cssmenu > ul > li:hover > ul {
+  opacity: 1;
+  top: 65px;
+  visibility: visible;
+}
+#cssmenu > ul > li > ul:before {
+  content: '';
   display: block;
-  background: #cc0e00;
-  border: 1px solid #990a00;
-  -moz-box-shadow: inset 0 5px 10px #990a00;
-  -webkit-box-shadow: inset 0 5px 10px #990a00;
-  box-shadow: inset 0 5px 10px #990a00;
+  border-color: transparent transparent #fafafa transparent;
+  border-style: solid;
+  border-width: 10px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -10px;
 }
-#cssmenu li:hover {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #ff4133;
+#cssmenu > ul ul > li {
+  position: relative;
 }
-#cssmenu li:hover a {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+#cssmenu ul ul a {
+  color: #323232;
+  font-family: Verdana, 'Lucida Grande';
+  font-size: 13px;
+  background-color: #fafafa;
+  padding: 5px 8px 7px 16px;
   display: block;
-  background: #cc0e00;
-  border: 1px solid #990a00;
-  -moz-box-shadow: inset 0 5px 10px #990a00;
-  -webkit-box-shadow: inset 0 5px 10px #990a00;
-  box-shadow: inset 0 5px 10px #990a00;
+  -webkit-transition: background-color 0.1s;
+  -moz-transition: background-color 0.1s;
+  -o-transition: background-color 0.1s;
+  transition: background-color 0.1s;
 }
+#cssmenu ul ul a:hover {
+  background-color: #f0f0f0;
+}
+#cssmenu ul ul ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -16px;
+  left: 206px;
+  padding: 16px 0 20px 0;
+  background-color: #fafafa;
+  text-align: left;
+  width: 180px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+#cssmenu ul ul > li:hover > ul {
+  opacity: 1;
+  left: 190px;
+  visibility: visible;
+}
+#cssmenu ul ul a:hover {
+  background-color: #cc2c24;
+  color: #f0f0f0;
+}
+
